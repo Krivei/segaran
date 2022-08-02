@@ -10,31 +10,66 @@
     <div class="container">
       <nav>
         <ul id="navbar">
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#profile">Profil</a></li>
-          <li><a href="#phead">Potensi Wisata</a></li>
-          <li><a href="#gsb">Layanan</a></li>
-          <li><a href="#gallery">Galeri</a></li>
+          <li><a id="navmenu" href="#home">Beranda</a></li>
+          <li><a  id="navmenu" href="#profildesa">Profil</a></li>
+          <li><a  id="navmenu" href="#pd">Potensi Wisata</a></li>
+          <li><a id="navmenu" href="#umkm">Potensi UMKM</a></li>
+          <li><a  id="navmenu" href="#service">Layanan</a></li>
+          <li><a  id="navmenu" href="#gallery">Galeri</a></li>
         </ul>
       </nav>
       <div id="home"></div>
-      <div id="profile"></div>
+      <div id="profile" >
+      <img id="profildesa" src="assets/img/curang.png" alt="" style="height: 70%;">
+      </div>
       <div id="protail"></div>
       <div id="phead"></div>
       <div id="pd">
-        <div class="slideshow-container">
-          <div class="row">
-            <div class="column2" id="caption">
-              <h3 id="ct">Pemandian Sumber Loo</h3>
+        <div class="prow">
+          <div class="pcolumn" onclick="plusDivs(1)">
+            <div class="pdtext">
+              
+              <h3>Pemandian Sumber Loo</h3>
               <p id="ctx">
-                Pada Desa Segaran, di bagian Dusun Krajen, terdapat satu gunung bernama Wali Kukuh yang cukup indah karena di sepanjang jalan nampak banyak bunga-bunga dan tanaman yang bervariasi. Pada gambar tersebut, terdapat satu tempat
-                yang beberapa warga sekitar anggap suci karena terdapat suatu makam keramat yang hanya orang-orang tertentu saja yang dapat mengakses dan masuk ke dalam pemakaman tersebut.
+                Desa Segaran memiliki tempat pemandian berbentuk kolam renang yang sangat luas (berjumlah dua kolam; kolam anak dan kolam dewasa) yang sumber airnya berasal langsung dari mata air Sumber Loo, sehingga terjaga keasrian air yang benar-benar segar tanpa mengandung zat kimia apapun seperti kaporit.
               </p>
-              <img src="assets/img/contact.png" alt="" />
+              <img src="assets/img/contact.png" alt="" style="height:150px ; align-self: center; justify-self: center;"/>
+              
             </div>
-            <div class="column2" id="foto">
-              <img src="assets/img/img1.png" alt="" />
+            <div class="pdtext">
+              <h3>Gunung Wali Kukun</h3>
+              <p id="ctx">
+                Pada Desa Segaran, di bagian Dusun Krajen, terdapat satu gunung bernama Wali Kukun yang cukup indah karena di sepanjang jalan nampak banyak bunga-bunga dan tanaman yang bervariasi. Pada gambar tersebut, terdapat satu tempat yang beberapa warga sekitar anggap suci karena terdapat suatu makam keramat yang hanya orang-orang tertentu saja yang dapat mengakses dan masuk ke dalam pemakaman tersebut.
+              </p>
+              <img src="assets/img/contact2.png" alt="" style="height:150px ; align-self: center; justify-self: center;">
             </div>
+            <div class="pdtext">
+              <h3>Gunung Kapur</h3>
+              <p id="ctx">Tempat yang cukup digemari oleh baik warga lokal maupun luar Segaran yaitu Gunung Kapur yang letaknya di Dusun Sumberbanteng Wetan. Tempatnya sangat indah dengan pemandangan tanah kapur yang seperti bukit.
+                <br><br>
+                Namun, semenjak pandemi Covid-19, tempat wisata ini ditutup hingga saat ini.
+              </p>
+              <img src="assets/img/contact3.png" alt=""style="height:150px ; align-self: center; justify-self: center;">
+            </div>
+          </div>
+          <div class="pcolumn" onclick="plusDivs(1)">
+            <div class="pdpict">
+            <img class="pdslide" src="assets/img/img1.png" style="width:400px" onclick="plusDivs(1)">
+            <img class="pdslide" src="assets/img/img2.png" style="width:400px" onclick="plusDivs(1)">
+            <img class="pdslide" src="assets/img/img3.png" style="width:400px" onclick="plusDivs(1)">
+          </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="humkm"></div>
+      <div id="umkm">
+        <div class="prow">
+          <div class="pcolumn" >
+          
+          </div>
+          <div class="pcolumn">
+          
           </div>
         </div>
       </div>
@@ -46,7 +81,7 @@
             <ul>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kades.png" alt="" />
+                  <img src="assets/img/kades.png" alt="" id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">H. Tasan</h1>
                     <hr />
@@ -60,7 +95,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/keuangan.png" alt="" />
+                  <img src="assets/img/keuangan.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Moh. Rokip</h1>
                     <hr />
@@ -74,7 +109,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/Kesejahteraan.png" alt="" />
+                  <img src="assets/img/Kesejahteraan.png" alt="" id="fotoperangkat"  />
                   <div id="text">
                     <h1 id="nama">Muslimin</h1>
                     <hr />
@@ -88,7 +123,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kasunsw.png" alt="" />
+                  <img src="assets/img/kasunsw.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Budi Ariadi</h1>
                     <hr />
@@ -106,7 +141,7 @@
             <ul>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/sekre.png" alt="" />
+                  <img src="assets/img/sekre.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Sutikno Adiyat</h1>
                     <hr />
@@ -120,7 +155,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/perencanaan.png" alt="" />
+                  <img src="assets/img/perencanaan.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Paiman</h1>
                     <hr />
@@ -134,7 +169,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/Pelayanan.png" alt="" />
+                  <img src="assets/img/Pelayanan.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">M Muhtadi</h1>
                     <hr />
@@ -148,7 +183,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kasunsj.png" alt="" />
+                  <img src="assets/img/kasunsj.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Abdurrohman</h1>
                     <hr />
@@ -166,7 +201,7 @@
             <ul>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kaurtu.png" alt="" />
+                  <img src="assets/img/kaurtu.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Bambang S.</h1>
                     <hr />
@@ -180,9 +215,9 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kaurpemerintah.png" alt="" />
+                  <img src="assets/img/kaurpemerintah.png" alt=""  id="fotoperangkat" />
                   <div id="text">
-                    <h1 id="nama" style="font-size: 30px">Sungeb Mu'alim</h1>
+                    <h1 id="nama" >Sungeb Mu'alim</h1>
                     <hr />
                     <p id="jabatan">Kasi Pemerintahan</p>
                     <div id="info">
@@ -194,7 +229,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kasunsb.png" alt="" />
+                  <img src="assets/img/kasunsb.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">H. Sabar</h1>
                     <hr />
@@ -208,7 +243,7 @@
               </li>
               <li>
                 <div id="kontak">
-                  <img src="assets/img/kasunkrajan.png" alt="" />
+                  <img src="assets/img/kasunkrajan.png" alt=""  id="fotoperangkat" />
                   <div id="text">
                     <h1 id="nama">Sri Indriyatno</h1>
                     <hr />
@@ -225,7 +260,7 @@
 
           <div class="column2">
             <div id="kontak">
-              <img src="assets/img/kaurtu.png" alt="" />
+              <img src="assets/img/kaurtu.png" alt=""  id="fotoperangkat" />
               <div id="text">
                 <h1 id="nama">Didik</h1>
                 <hr />
@@ -239,7 +274,7 @@
           </div>
           <div class="column2">
             <div id="kontak">
-              <img src="assets/img/Vector.png" alt="" />
+              <img src="assets/img/Vector.png" alt=""  id="fotoperangkat" />
               <div id="text">
                 <h1 id="nama">-</h1>
                 <hr />
@@ -254,41 +289,43 @@
         </div>
       </div>
       <div id="gallery">
-        <h1 style="margin-top: 60px">Gallery</h1>
+        
       </div>
+      <div id="gjustifier">
       <div id="gcontent">
         <div class="grow">
           <div class="gcolumn">
             <img class="gimg" id="gimg" src="assets/img/Galeri/futsal.png" alt="futsal" onclick="openModal();currentSlide(1)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/KKB.png" alt="kkb" onclick="openModal();currentSlide(2)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/lahan.png" alt="lahan" onclick="openModal();currentSlide(3)" />
-            <img class="gimg" id="gimg" src="assets/img/Galeri/mpls.png" alt="mpls" onclick="openModal();currentSlide(4)" />
+            <img class="gimg" id="gimg" src="assets/img/Galeri/Posyandu.JPG" alt="mpls" onclick="openModal();currentSlide(14)" />
           </div>
           <div class="gcolumn">
             <img class="gimg" id="gimg" src="assets/img/Galeri/mpls.png" alt="mpls" onclick="openModal();currentSlide(4)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/poskamling.png" alt="poskamling" onclick="openModal();currentSlide(5)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/ramah.png" alt="ramah" onclick="openModal();currentSlide(6)" />
-            <img class="gimg" id="gimg" src="assets/img/Galeri/salat.png" alt="salat" onclick="openModal();currentSlide(7)" />
+            <img class="gimg" id="gimg" src="assets/img/Galeri/senam.png" alt="senam" onclick="openModal();currentSlide(8)" />
           </div>
           <div class="gcolumn">
             <img class="gimg" id="gimg" src="assets/img/Galeri/salat.png" alt="salat" onclick="openModal();currentSlide(7)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/senam.png" alt="senam" onclick="openModal();currentSlide(8)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/Terapi.png" alt="terapi" onclick="openModal();currentSlide(9)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/TKK.png" alt="tkk" onclick="openModal();currentSlide(10)" />
-            <img class="gimg" id="gimg" src="assets/img/Galeri/lahan.png" alt="lahan" onclick="openModal();currentSlide(3)" />
+            <img class="gimg" id="gimg" src="assets/img/Galeri/posyandus.png" alt="posyandus" onclick="openModal();currentSlide(13)" />
           </div>
           <div class="gcolumn">
             <img class="gimg" id="gimg" src="assets/img/Galeri/TPQ.png" alt="tpq" onclick="openModal();currentSlide(11)" />
             <img class="gimg" id="gimg" src="assets/img/Galeri/vaksinasi.png" alt="vaksin" onclick="openModal();currentSlide(12)" />
-            <img class="gimg" id="gimg" src="assets/img/Galeri/futsal.png" alt="futsal" onclick="openModal();currentSlide(1)" />
-            <img class="gimg" id="gimg" src="assets/img/Galeri/posyandus.png" alt="posyandus" onclick="openModal();currentSlide(13)" />
-            <img class="gimg" id="gimg" src="assets/img/Galeri/futsal.png" alt="futsal" onclick="openModal();currentSlide(1)" />
+            <img class="gimg" id="gimg" src="assets/img/Galeri/suro.JPG" alt="futsal" onclick="openModal();currentSlide(15)" />
+            <img class="gimg" id="gimg" src="assets/img/Galeri/TPQ.png" alt="tpq" onclick="openModal();currentSlide(11)" />
+           
           </div>
           <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="overlay"  onclick="closeModal()"></div>
+            <!-- <span  class="close cursor button-close-modal" onclick="closeModal()">&times;</span> -->
             <div class="modal-content">
               <div class="mySlides">
-                <div class="numbertext">1 / 13</div>
+                <div class="numbertext">1 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/futsal.png" alt="" style="height: 200px" />
                   <br />
@@ -310,7 +347,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">2 / 13</div>
+                <div class="numbertext">2 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/KKB.png" alt="" style="width: 400px; height: 300px; font-size: 10px" />
                 </div>
@@ -331,7 +368,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">3 / 13</div>
+                <div class="numbertext">3 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/lahan.png" alt="" style="width: 400px; height: 400px" />
                 </div>
@@ -349,7 +386,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">4 / 13</div>
+                <div class="numbertext">4 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/mpls.png" alt="" style="width: 400px; height: 400px" />
                 </div>
@@ -369,7 +406,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">5 / 13</div>
+                <div class="numbertext">5 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/poskamling.png" alt="" style="height: 400px" />
                 </div>
@@ -387,7 +424,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">6 / 13</div>
+                <div class="numbertext">6 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/ramah.png" alt="" style="height: 400px" />
                 </div>
@@ -410,7 +447,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">7 / 13</div>
+                <div class="numbertext">7 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/salat.png" alt="" />
                 </div>
@@ -428,7 +465,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">8 / 13</div>
+                <div class="numbertext">8 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/senam.png" alt="" />
                 </div>
@@ -452,7 +489,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">9 / 13</div>
+                <div class="numbertext">9 / 15</div>
                 <div class="content">
                   <img src="assets/img/Galeri/Terapi.png" alt=""  style="height: 250px ;"/>
                   <p id="gtx" style="margin-left: 40px; margin-top:30px;">
@@ -472,7 +509,7 @@
                 </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">10 / 13</div>
+                <div class="numbertext">10 / 15</div>
                 <div class="content">
                 <img src="assets/img/Galeri/TKK.png" alt="" style="height: 200px;"/>
                 <p id="gtx"  style="margin: 10px 40px 10px 40px;">“Miskonsepsi yang sering kita lihat adalah bahwa pendidikan untuk anak usia dini ini terlihat hanya untuk membaca, menulis, berhitung, calistung. Padahal ini berbeda sebenarnya dengan ilmu pendidikan anak usia dini yang harus lebih menguatkan aspek yang lebih integratif dan yang lebih melakukan bermain.”
@@ -491,7 +528,7 @@
               </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">11 / 13</div>
+                <div class="numbertext">11 / 15</div>
                 <div class="content">
                 <img src="assets/img/Galeri/TPQ.png" alt="" style="height: 200px;"/>
                 <p id="gtx"  style="padding: 10px 40px 10px 40px;">
@@ -510,7 +547,7 @@
               </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">12 / 13</div>
+                <div class="numbertext">12 / 15</div>
                 <div class="content">
                 <img src="assets/img/Galeri/vaksinasi.png" style="height: 400px;" alt="" />
               </div>
@@ -525,7 +562,7 @@
               </div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">13 / 13</div>
+                <div class="numbertext">13 / 15</div>
                 <div class="content">
                 <img src="assets/img/Galeri/posyandus.png" alt="" style="height: 400px ;"/>
               </div>
@@ -538,15 +575,73 @@
                 </p>
               </div>
               </div>
+              <div class="mySlides">
+                <div class="numbertext">14 / 15</div>
+                <div class="content">
+                <img src="assets/img/Galeri/Posyandu.JPG" alt="" style="height: 400px ;"/>
+              </div>
+              <div class="content">
+                <h3>Kegiatan BIAN</h3>
+                <p id="gtx">
+                  Dalam rangka memperingati Bulan Imunisasi Anak Nasional (BIAN), Desa Segaran juga ikut mengadakan kegiatan imunisasi di posyandu. BIAN adalah upaya yang dicanangkan oleh Kementerian Kesehatan tahun 2022 untuk meningkatkan cakupan imunisasi rutin anak yang sempat menurun selama pandemi covid-19. BIAN sendiri merupakan kegiatan pemberian imunisasi tambahan Campak-Rubela dan pemberian imunisasi pada anak yang belum mendapatkan vaksin lengkap. 
+                  <br><br>
+                  Kegiatan BIAN pada Desa Segaran dilaksanakan pada hari Selasa, 2 Agustus 2022. Imunisasi dilakukan pada masing-masing dusun (Krajan 1, Krajan 2, Putat, Sumberbanteng, Sumberkotes Kulon, Sumberkotes Wetan, Sumberjabon Wetan, Sumberjabon Kulon) pada tempat yang sudah disepakati untuk dijadikan posko kegiatan.
+                </p>
+              </div>
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">15 / 15</div>
+                <div class="content">
+                <img src="assets/img/Galeri/suro.JPG" alt="" style="height: 400px ;"/>
+              </div>
+              <div class="content">
+                <h3>Kegiatan Suroan</h3>
+                <p id="gtx">
+                  Suroan adalah tradisi turun menurun yang masih dilaksanakan masyarakat jawa sampai sekarang. Masyarakat Desa Segaran yang juga masih kental dengan budaya dan adat jawa juga selalu melaksanakan tradisi suroan untuk memperingati 1 Muharram atau yang lebih dikenal dengan 1 suro.  Tahun ini (2022), 1 suro jatuh pada tanggal 30 Juli 2022 dan Desa Segaran merayakan tradisi ini pada hari Senin, 2 Juli 2022. Suroan menitikberatkan pada ketentaman batin dan keselamatan. Ritual ini juga diselingi dengan pembacaan doa dari semua orang yang hadir denagn tujuan mendapatkan berkah dan menangkal marabahaya.                  <br><br>
+                  Pada foto di samping, kegiatan PKK dilakukan pada hari Rabu, 27 Juli 2022 yang khusus membahas perencanaan Agustusan dan imunisasi anak nasional serentak satu Indonesia. Setiap dusunnya, mengirim perwakilan untuk mengikuti penyuluhan ini agar mendapat informasi yang sinergis dan terpusat dari desa. Adapun proses imunisasi anak nasional akan dilakukan secara serentak pada tanggal 2 Agustus 2022.
+                </p>
+              </div>
+              </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
       <div style="width: 100%; height: 400px"></div>
     </div>
     <script>
+      var pindex = 1;
+showDivs(pindex);
+
+function plusDivs(n) {
+  showDivs(pindex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("pdslide");
+  var y = document.getElementsByClassName("pdtext");
+  if (n > x.length) {pindex = 1}
+  if (n < 1) {pindex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    y[i].style.display = "none"; 
+  }
+  y[pindex-1].style.display = "block"
+  x[pindex-1].style.display = "block";  
+}
+
+const autoslide = setInterval(plusDivs,5000,1);
+
+if (
+    event.target.matches(".button-close-modal") ||
+    !event.target.closest(".modal")
+  ) {
+    closeModal()
+  }
+
       // Open the Modal
       function openModal() {
         document.getElementById("myModal").style.display = "flex";
@@ -591,6 +686,8 @@
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
       }
+
+      
     </script>
   </body>
 </html>

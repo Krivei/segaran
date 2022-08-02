@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+.pdslide{
+  cursor: pointer;
+}
+
 .container {
   width: 1440px;
 }
@@ -23,6 +27,10 @@ body {
   background-size: 100% 100%;
   width: 1440px;
   height: 624px;
+}
+
+#navmenu:hover{
+  opacity: 0.2;
 }
 
 nav {
@@ -55,21 +63,46 @@ a {
 }
 
 #profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 1024px;
   width: 100%;
-  background-image: url("../img/curang.png");
+  /* background-image: url("../img/curang.png"); */
 }
 #pd {
-  height: 1000px;
+  height: 800px;
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
 }
+
 #ptail {
   height: 155px;
   width: 100%;
   background-image: url("../img/pdtail.png");
 }
+
+.pdpict{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.pdtext{
+  
+  width: 100%;
+  font-weight: lighter;
+}
+.pdtext h3{
+  font-size: 35px;
+  margin-left: 60px;
+  text-align: start;
+  color: #2489f4;
+}
+
 #gsb {
   height: 485px;
   width: 100%;
@@ -84,20 +117,33 @@ a {
 }
 #gallery {
   display: flex;
+  text-align: center;
   justify-content: center;
   margin-top: 0;
-  height: 300px;
+  height: 542px;
   width: 100%;
-  background-color: #fff;
-}
+background-image: url("../img/hgaleri.png");}
 .column {
-  height: 2522px;
+  justify-content: center;
+  height: 2000px;
   float: left;
   width: 33.33%;
   display: flex;
-
   justify-content: center;
 }
+
+#fotoperangkat{
+  align-self: center;
+  margin: auto;
+  height: 200px;
+}
+
+#urow{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 #phead {
   width: 100%;
@@ -105,21 +151,23 @@ a {
   background-image: url("../img/headerpotensi.png");
 }
 #kontak {
+  align-content: center;
+  flex-direction: column;
+  display: flex;
   margin: 40px;
   width: 267px;
   justify-content: center;
-  height: 563px;
+  /* height: 400px; */
 }
+
+
 
 #img {
   background-image: url("../img/kades.png");
   height: 331px;
   width: 250px;
 }
-#text {
-  height: 232px;
-  width: 250px;
-}
+
 
 #waicon {
   height: 50px;
@@ -128,22 +176,25 @@ a {
 
 #wanum {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 14px;
+}
+#wanum:hover{
+  opacity: 0.5;
 }
 #info {
   align-items: center;
   display: flex;
 }
 #nama {
-  font-size: 34px;
+  font-size: 20px;
 }
 #jabatan {
-  font-size: 24px;
+  font-size: 16px;
 }
 .column2 {
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
-  height: 1000px;
+  height: 500px;
   width: 50%;
   display: flex;
   float: left;
@@ -195,11 +246,18 @@ p {
   background-image: url("../img/Frame5.png");
 }
 #gcontent {
+  display: flex;
   overflow: hidden;
   margin: 0;
-  width: 100%;
-  height: 1200px;
+  width: 80%;
+  height: 1100px;
 }
+
+#gjustifier{
+  display: flex;
+  justify-content: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -221,9 +279,13 @@ p {
   width: 100%;
 }
 #gimg {
-  border-radius: 5px;
+  border-radius: 1px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+#gimg:hover{
+  opacity: 0.7;
 }
 /*  kopazz */
 
@@ -231,20 +293,26 @@ p {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
 
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.modal .overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   background-color: rgb(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
 .modal-content {
   justify-content: center;
-
   position: relative;
 
   background-color: white;
@@ -256,6 +324,7 @@ p {
   display: flex;
   flex-direction: column;
 }
+
 
 /* The Close Button */
 .close {
@@ -348,6 +417,23 @@ img.demo {
   opacity: 0.6;
 }
 
+.pcolumn{
+  cursor: pointer;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+.prow:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .active,
 .demo:hover {
   opacity: 1;
@@ -367,4 +453,37 @@ img.hover-shadow {
 .modal hr{
   width: 90%;
   margin-left: 0;
+}
+.pdtext img{
+  margin-left: 60px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+#humkm{
+  background-image: url("../img/humkm.png");
+  width: 100%;
+  height: 542px;
+}
+
+#umkm{
+  height: 800px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
 }
